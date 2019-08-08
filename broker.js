@@ -4,13 +4,12 @@ const Broker = QBroker.Broker;
 
 const broker = new Broker({
   // bind_address: "tcp://127.0.0.1:15000",
-  bind_address: "http://35.240.236.147:15000",
+  bind_address: "tcp://35.240.236.147:15000",
   services: [
     {
       name: "authentication",
       upstream: [
-        // "tcp://127.0.0.1:11000",
-        "http://35.240.236.147:11000",
+        "tcp://0.0.0.0:11000",
       ]
     },
 
