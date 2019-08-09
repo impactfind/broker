@@ -1,5 +1,4 @@
 const QBroker = require('qgrail-broker');
-console.log(QBroker)
 const Broker = QBroker.Broker;
 
 const broker = new Broker({
@@ -10,6 +9,12 @@ const broker = new Broker({
       name: "authentication",
       upstream: [
         "tcp://0.0.0.0:11000",
+      ]
+    },
+    {
+      name: "authentication2",
+      upstream: [
+        "tcp://0.0.0.0:11003",
       ]
     },
 
